@@ -7,6 +7,12 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+    
+    
+    <%= link_to "Settings",settings_path %>
+    <%= render 'layouts/header' %>
+    <%= flash.each do |name,msg| %>
+    <%end%> 
 
 <%= yield %>
 
